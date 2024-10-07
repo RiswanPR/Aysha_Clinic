@@ -1,0 +1,387 @@
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Services</h5>
+                <h1 class="display-4">Excellent Medical Services</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-user-md text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Emergency Care</h4>
+                        <p class="m-0">"Expert emergency care with fast response, top-notch medical team, and advanced
+                            treatment for critical situations."</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="./service">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-procedures text-primary"></i>
+                        </div>
+                        <h4 class="mb-3"> Minor Operation & Surgery</h4>
+                        <p class="m-0">"State-of-the-art minor operation facility with skilled surgeons, advanced
+                            equipment, and quick, safe procedures."</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-stethoscope text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Home Checkup</h4>
+                        <p class="m-0">"Convenient outdoor checkups with expert care, minimal wait times, and
+                            personalized medical attention."</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-heart text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">ECG</h4>
+                        <p class="m-0">"Accurate ECG testing with advanced technology, quick results, and expert
+                            analysis for heart health monitoring."</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-pills text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Medicine & Pharmacy</h4>
+                        <p class="m-0">"Comprehensive medicine and pharmacy services, including veterinary care,
+                            ensuring health for people and pets alike."</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div
+                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-microscope text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">fully Computerised Lab & Diagnostics </h4>
+                        <p class="m-0">"Advanced computerized lab with precise diagnostics, fast results, and
+                            cutting-edge technology for accurate healthcare."</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+<!-- Appointment Start -->
+<div class="container-fluid bg-primary my-5 py-5">
+    <div class="container py-5">
+        <div class="row gx-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="mb-4">
+                    <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
+                    <h1 class="display-4">Make An Appointment For Your Family</h1>
+                </div>
+                <p class="text-white mb-5">"Make an appointment for your family today and prioritize their health!
+                    Our dedicated team offers personalized care tailored to each member's needs. With convenient
+                    scheduling options and a welcoming environment, we ensure a seamless experience for everyone.
+                    Don't wait—schedule your family's check-up and enjoy peace of mind with our expert services!"
+                </p>
+                <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="">Find Doctor</a>
+                <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="">Read More</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-white text-center rounded p-5">
+                    <h1 class="mb-4">Book An Appointment</h1>
+
+
+                    {{#if docterConfirm}}
+                    <div class="row">
+                        <div class="col-md-9">
+                            <input type="text" style="text-align: center; width: 110%; height: 55px;"
+                                value="DR. {{docterName}}" class="form-control bg-white border-0 ">
+                        </div>
+                        <div class="col-md-3">
+                            <form action="/docterdelete" method="post">
+                                <input class="btn btn-danger p-3"
+                                    style="font-family: system-ui;height: 90%;text-align: center; " value="X"
+                                    type="submit">
+                            </form>
+
+                            {{!-- <a style="font-family: system-ui;text-align: center;" value="X" href="/docterdelete"
+                                class="btn btn-danger p-3">X</a> --}}
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <input type="text" value="{{docterName}}" hidden>
+                    <form action="/appointment" method="post" id="booking">
+                        <div class="row g-3">
+
+                            <div class="col-12 col-sm-12">
+                                <input type="text" class="form-control bg-white border-0" placeholder="Your Name"
+                                    style="height: 55px;" name="Name" required>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-white border-0" placeholder="Your Gender"
+                                    style="height: 55px;" name="Gender" required>
+
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="Phone_Number" id="Phone_Number" data-target-input="nearest">
+                                    <input type="text" name="Phone_Number" class="form-control bg-white border-0"
+                                        placeholder="Phone Number" style="height: 55px;" min="" required>
+
+                                    <input type="text" name="status" value="PENDING" hidden>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                {{!-- <div class="date" id="date" data-target-input="nearest">
+                                    <input style="height: 55px;"
+                                        class="form-control bg-white border-0 datetimepicker-input" placeholder="Date"
+                                        type="date" name="Booking_Date" min="{{today}}" required>
+                                </div> --}}
+                                <input type="text" class="form-control bg-white border-0" id="datepickermain"
+                                    placeholder="Booking Date">
+                            </div>
+
+                            <div class="col-12 col-sm-6">
+                                <input type="number" class="form-control bg-white border-0" placeholder="Age"
+                                    style="height: 55px;" name="Age" max="120" required>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Make An Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p id="DocterDate">{{date}}</p>
+
+                    {{else}}
+                    <form action="/docterconfirm" method="post" id="DocterConfirm">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 mt-3">
+                                <select id="doctor" class="form-select bg-white border-0" name="DocterName"
+                                    style="height: 55px; border: 1px;" onchange="submitForm()">
+
+                                    <option value="">Select The Docter</option>
+                                    {{#each docter}}
+                                    <option value="{{this.Docter_Name}}"> {{this.Docter_Name}}
+                                    </option>
+                                    {{/each}}
+
+                                </select>
+                                {{!-- <p class="text-danger text-right">First Select The Docter*</p> --}}
+                            </div>
+                        </div>
+                    </form>
+
+                    <br>
+                    <form action="/appointment" method="post" id="booking">
+                        <div class="row g-3">
+
+                            <div class="col-12 col-sm-12">
+                                <input type="text" class="form-control bg-white border-0" placeholder="Your Name"
+                                    style="height: 55px;" name="Name" disabled>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-white border-0" placeholder="Your Gender"
+                                    style="height: 55px;" name="Gender" disabled>
+
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="Phone_Number" id="Phone_Number" data-target-input="nearest">
+                                    <input type="text" name="Phone_Number" class="form-control bg-white border-0"
+                                        placeholder="Phone Number" style="height: 55px;" min="" disabled>
+
+                                    <input type="text" name="status" value="PENDING" hidden>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input style="height: 55px;"
+                                        class="form-control bg-white border-0 datetimepicker-input" placeholder="Date"
+                                        type="date" name="Booking_Date" min="{{today}}" disabled>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6">
+                                <input type="number" class="form-control bg-white border-0" placeholder="Age"
+                                    style="height: 55px;" name="Age" max="120" disabled>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit" disabled>Make An
+                                    Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                    {{/if}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Appointment End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Testimonial</h5>
+                <h1 class="display-4">Patients Say About Our Services</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="/img/pic-3.jpeg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">I visited Aysha Clinic for fever treatment and had a great
+                                experience. The staff was friendly, and the doctor provided excellent care. I felt well
+                                taken care of, and the clinic was clean and welcoming.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Jishnu vs</h3>
+                            <h6 class="fw-normal text-primary mb-3">Software developer</h6>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="/img/pic-1.jpeg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">Best clinic in Balussery. Good Doctors and facilities.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Kritheesh</h3>
+                            <h6 class="fw-normal text-primary mb-3">marketing manager</h6>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="/img/testimonial-3.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
+                                dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
+                                erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Patient Name</h3>
+                            <h6 class="fw-normal text-primary mb-3">Profession</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+<script>
+    function submitForm() {
+        document.getElementById("DocterConfirm").submit();
+    }
+</script>
+
+<script>
+    $(function () {
+        // Doctor's available days as returned from the database, e.g., " Mondays,Tuesdays,Wednesdays,Saturdays "
+        var availableDays = "{{date}}".replace(/\s/g, ""); // Remove spaces
+
+        // Split the days by commas into an array
+        availableDays = availableDays.split(",");
+
+        // Map day names to indexes
+        var availableDayIndexes = availableDays.map(function (day) {
+            switch (day) {
+                case "Sundays": return 0;
+                case "Mondays": return 1;
+                case "Tuesdays": return 2;
+                case "Wednesdays": return 3;
+                case "Thursdays": return 4;
+                case "Fridays": return 5;
+                case "Saturdays": return 6;
+                default: return -1; // Handle unexpected values
+            }
+        }).filter(index => index !== -1); // Remove invalid indexes
+
+        // Function to disable unavailable days and past days
+        function disableUnavailableDays(date) {
+            var day = date.getDay(); // Get the day (0 = Sunday, 6 = Saturday)
+            var currentDate = new Date(); // Get today's date
+
+            // Check if the date is in the past
+            if (date < currentDate.setHours(0, 0, 0, 0)) {
+                return [false]; // Disable past dates
+            }
+
+            // Enable only available days (from availableDayIndexes)
+            return [availableDayIndexes.indexOf(day) !== -1];
+        }
+        // Initialize the date picker
+        $("#datepickermain").datepicker({
+            beforeShowDay: disableUnavailableDays,
+            dateFormat: 'mm/dd/yy'
+        });
+    });
+</script>
+
+<script>
+
+    $("#DocterConfirm").submit((e) => {
+
+        e.preventDefault();
+        $.ajax({
+
+            url: '/docterconfirm',
+            method: 'post', '
+            data: $('#DocterConfirm').serialize(),
+            success: (response) => {
+                // alert(response)
+                if (response.status) {
+                    location.reload()
+
+                } else {
+                    location.reload()
+                }
+            }
+        });
+    });
+
+
+</script>

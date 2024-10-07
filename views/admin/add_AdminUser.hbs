@@ -1,0 +1,32 @@
+<div class="page-wrapper">
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h4 class="page-title">Add Admin User</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <form action="/admin/add-AdminUser" , method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label class="form-control-label">USERNAME</label>
+            <input name="Username" type="text" class="form-control">
+
+            <br>
+
+            <label class="form-control-label">PASSWORD</label>
+            <input name="Password" type="password" class="form-control">
+
+            <input type="text" value="{{admin}}" name="CreatedBy" hidden>
+
+          </div>
+          <div class="m-t-20 text-center">
+            <button class="btn btn-primary submit-btn">Create Admin</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>

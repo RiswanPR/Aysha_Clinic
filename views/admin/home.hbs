@@ -1,0 +1,139 @@
+<div class="page-wrapper">
+    <div class="content">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="dash-widget">
+                    <span class="dash-widget-bg1"><i class="fa fa-stethoscope" aria-hidden="true"></i></span>
+                    <div class="dash-widget-info text-right">
+                        <h3>{{docters}}</h3>
+                        <span class="widget-title1">Doctors <i class="fa fa-check" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="dash-widget">
+                    <span class="dash-widget-bg2"><i class="fa fa-user-o"></i></span>
+                    <div class="dash-widget-info text-right">
+                        <h3>{{ConfirmAppointmentsLength}}</h3>
+                        <span class="widget-title2">Confirmed Patients <i class="fa fa-check"
+                                aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="dash-widget">
+                    <span class="dash-widget-bg3"><i class="fa fa-user-md" aria-hidden="true"></i></span>
+                    <div class="dash-widget-info text-right">
+                        <h3>{{CompletedAppointmentsLength}}</h3>
+                        <span class="widget-title3">Attend <i class="fa fa-check" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="dash-widget">
+                    <span class="dash-widget-bg4"><i class="fa fa-heartbeat" aria-hidden="true"></i></span>
+                    <div class="dash-widget-info text-right">
+                        <h3>{{PendingAppointmentsLength}}</h3>
+                        <span class="widget-title4">Pending Appointments <i class="fa fa-check"
+                                aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-8 col-xl-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title d-inline-block">Upcoming Appointments</h4> <a href="appointments.html"
+                            class="btn btn-primary float-right">View all</a>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead class="d-none">
+                                    <tr>
+                                        <th>Patient Name</th>
+                                        <th>Phone Number</th>
+                                        <th>Doctor Name</th>
+                                        <th>Booking Date</th>
+                                        <th class="text-right">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{#each PendingAppointments}}
+                                    <tr>
+                                        <td style="min-width: 200px;">
+
+                                            <h2><a>{{this.Name}}<span>Age : {{this.Age}}</span></a>
+                                            </h2>
+                                        </td>
+                                        <td>
+                                            <h5 class=" p-0 mr-5">Phone Number</h5>
+                                            <p>{{this.Phone_Number}} </p>
+                                        </td>
+                                        <td>
+                                            <h5 class="time-title p-0">Appointment With</h5>
+                                            <p>Dr. {{this.DocterName}} </p>
+                                        </td>
+                                        <td>
+                                            <h5 class="time-title p-0">Booking Date</h5>
+                                            <p>{{this.Booking_Date}} </p>
+                                        </td>
+                                        <td class="text-right">
+                                            <a href="/admin/confirm-appointment/{{this._id}}"
+                                                class="btn btn-outline-primary take-btn">Take
+                                                up</a>
+                                        </td>
+                                    </tr>
+
+                                    {{/each}}
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="card member-panel">
+                    <div class="card-header bg-white">
+                        <h4 class="card-title mb-0">Doctors</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="contact-list">
+                            {{#each duty_docters}}
+                            <li>
+                                <div class="contact-cont">
+                                   
+                                    <div class="contact-info">
+                                        <span class="contact-name text-ellipsis"><b>DR.</b> {{this.Docter_Name}}</span>
+                                        <span class="contact-date">{{this.Department_Name}}</span>
+                                    </div>
+                                </div>
+                            </li>
+                            {{/each}}
+
+                            {{#each offDuty_docters}}
+                            <li>
+                                <div class="contact-cont">
+                                   
+                                    <div class="contact-info">
+                                        <span class="contact-name text-ellipsis"><b>DR.</b> {{this.Docter_Name}}</span>
+                                        <span class="contact-date">{{this.Department_Name}}</span>
+                                    </div>
+                                </div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center bg-white">
+                        <a href="/admin/docters" class="text-muted">View all Doctors</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
